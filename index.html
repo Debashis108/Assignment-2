@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Corrected Font Awesome CDN link -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -12,11 +12,10 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Tailwind CSS JIT for browser -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Assuming tailwind.css contains custom configurations if any -->
+
     <link rel="stylesheet" href="tailwind.css" />
-    <!-- Google Fonts for Noto Serif and Inter -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@700&display=swap"
       rel="stylesheet"
@@ -24,14 +23,12 @@
 
     <title>Assignment-2</title>
   </head>
-  <!-- Corrected duplicate body tag -->
+
   <body class="m-0 p-0 bg-[rgba(246,248,253,1)] font-inter">
     <header
       class="h-auto max-w-full md:max-w-[1140px] mx-auto mt-6 md:mt-[30px] mb-12 md:mb-[120px] px-4"
     >
-      <!-- Main Header Flex Container: Logo and Cart (on mobile), or Logo + Nav Links + Cart (on desktop) -->
       <div class="flex justify-between items-center">
-        <!-- Logo Section -->
         <div class="h-auto w-32 md:w-[135px]">
           <img
             src="./assets/logo.png"
@@ -40,7 +37,6 @@
           />
         </div>
 
-        <!-- Desktop Navigation Links (hidden on small screens, flex on medium and up) -->
         <div
           class="hidden md:flex items-center gap-4 sm:gap-8 md:gap-[48px] py-2 md:py-[18px]"
         >
@@ -63,7 +59,6 @@
           </div>
         </div>
 
-        <!-- Cart Link (always visible, positioned by main flex container) -->
         <div class="flex items-center gap-2 py-2 md:py-[18px]">
           <div>
             <i class="fa-solid fa-cart-shopping text-lg text-gray-700"></i>
@@ -77,11 +72,9 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
     <div
       class="flex flex-col md:flex-row max-w-full md:max-w-[1140px] sm:flex flex-col-reverse mx-auto gap-8 md:gap-0 px-4"
     >
-      <!-- Text Content -->
       <div
         class="w-full md:w-1/2 h-auto md:h-[299px] flex flex-col justify-center"
       >
@@ -119,7 +112,7 @@
           are perfect for any occasion.
         </p>
       </div>
-      <!-- Hero Image -->
+
       <div class="w-full md:w-1/2 flex justify-center md:justify-end">
         <img
           class="h-auto w-full max-w-md md:max-w-none md:w-[570px] rounded-lg shadow-lg"
@@ -154,11 +147,10 @@
             classic roses to exotic blooms, we offer a wide variety of fresh.
           </p>
         </div>
-        <!-- Product Grid -->
+
         <div
           class="grid grid-cols-1 sm:grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-[30px] mt-12 md:mt-[49px] pr-0 md:pr-[20px]"
         >
-          <!-- Product Card Template (repeated 8 times) -->
           <div
             class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md"
           >
@@ -371,25 +363,21 @@
       </section>
 
       <section>
-        <!-- Flower & Plants Lover Card (as per previous request) -->
         <div class="bg-gray-100 p-16">
-          <!-- outer padding -->
           <div
             class="max-w-6xl mx-auto bg-white rounded-lg shadow-lg flex flex-col md:flex-row overflow-hidden relative p-10"
           >
-            <!-- Left: Image -->
             <div class="relative w-full md:w-1/2 h-96 md:h-auto">
               <img
                 src="./assets/flower-store.png"
                 alt="Florist Top View"
                 class="w-full h-full object-cover"
               />
-              <!-- Gradient overlay -->
+
               <div
                 class="absolute inset-0 bg-gradient-to-t from-orange-500/30 to-transparent"
               ></div>
 
-              <!-- Badge positioned top-right of image -->
               <div
                 class="absolute -top-6 -right-8 p-1 bg-white rounded-full w-24 h-24 flex items-center justify-center"
               >
@@ -401,7 +389,6 @@
               </div>
             </div>
 
-            <!-- Right: Text content -->
             <div class="w-full md:w-1/2 p-10 bg-gray-50">
               <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
                 Flower & Plants Lover
@@ -429,7 +416,6 @@
         </div>
       </section>
 
-      <!-- Latest Deals Section -->
       <section class="mt-16 md:mt-[120px] px-4">
         <div class="flex flex-col items-center text-center">
           <h1
@@ -449,7 +435,6 @@
         <div
           class="flex flex-col md:flex-row justify-center gap-6 md:gap-[28px] mx-auto max-w-full md:max-w-[1140px] mt-16 md:mt-[120px]"
         >
-          <!-- Left Deals Column -->
           <div class="flex flex-col gap-6 md:gap-[25px] w-full md:w-auto">
             <div
               class="bg-[url('./assets/deal-bloom.png')] bg-cover bg-center h-48 md:h-[201px] w-full md:w-[367px] bg-gray-300 rounded-xl flex items-center justify-center text-center p-4"
@@ -484,7 +469,7 @@
               </div>
             </div>
           </div>
-          <!-- Right Main Deal -->
+
           <div
             class="bg-[url('./assets/deal-zabo.png')] bg-cover bg-center h-80 md:h-[423px] w-full md:w-[753px] bg-gray-300 rounded-2xl flex items-center justify-center text-center p-4"
           >
@@ -504,7 +489,6 @@
         </div>
       </section>
 
-      <!-- Newsletter Section -->
       <section class="mt-16 md:mt-[120px]">
         <div
           class="bg-[url('./assets/news-letter-bg.png')] bg-cover bg-center h-[300px] md:h-[533px] w-full flex items-center justify-center p-4"
@@ -534,12 +518,10 @@
       </section>
     </main>
 
-    <!-- Footer Section -->
     <footer class="max-w-full md:max-w-[1140px] mx-auto py-8 md:py-[50px] px-4">
       <div
         class="flex flex-col md:flex-row gap-8 md:gap-[110.67px] items-center md:items-start"
       >
-        <!-- Footer Logo and Description -->
         <div class="text-center md:text-left">
           <div class="mb-4">
             <img
@@ -556,7 +538,7 @@
             flower shop.
           </p>
         </div>
-        <!-- Navigation Links Column 1 -->
+
         <div class="flex flex-col gap-4 md:gap-8 text-center md:text-left">
           <div class="text-[rgba(107,114,128,1)] text-base md:text-lg">
             <a href="#">Home</a>
@@ -574,7 +556,7 @@
             <a href="#">Contact Us</a>
           </div>
         </div>
-        <!-- Navigation Links Column 2 -->
+
         <div class="flex flex-col gap-4 md:gap-8 text-center md:text-left">
           <div class="text-[rgba(107,114,128,1)] text-base md:text-lg">
             <a href="#">Features</a>
@@ -592,7 +574,7 @@
             <a href="#">Help Center</a>
           </div>
         </div>
-        <!-- Social Media Icons -->
+
         <div class="flex gap-4 md:gap-6 items-center">
           <span
             ><img
